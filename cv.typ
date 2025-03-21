@@ -1,4 +1,4 @@
-#import "@preview/imprecv:1.0.1": *
+#import "format.typ": *
 
 #let cvdata = yaml("cn.yml")
 
@@ -50,13 +50,13 @@
 #show: doc => cvinit(doc)
 
 #cvheading(cvdata, uservars)
+
 #cvwork(cvdata)
+
 #cveducation(cvdata)
-#cvaffiliations(cvdata)
+
 #cvprojects(cvdata)
-#cvawards(cvdata)
-#cvcertificates(cvdata)
-#cvpublications(cvdata)
+
 #cvskills(cvdata)
-#cvreferences(cvdata)
+
 #endnote(uservars)

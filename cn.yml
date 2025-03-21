@@ -1,0 +1,107 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/imprecv/main/cv.typ.schema.json
+
+personal:
+  name: 曲硕
+  email: qushuo233@gmail.com
+  phone: "18810960119"
+  url: null
+  titles:
+    - 软件开发工程师
+  #  - Data Analyst
+  #  - Entrepreneur
+  location:
+    city: 北京
+    #region: New York
+    #country: United States of America
+  profiles:
+    #- network: LinkedIn
+    #  username: John Doe
+    #  url: https://linkedin.com/in/johndoe
+    - network: GitHub
+      username: qs625
+      url: https://github.com/qs625
+
+work:
+  - organization: 华为/2012实验室
+    url: null
+    location: 北京
+    positions:
+      - position: 软件开发工程师-Rust做IDE开发
+        startDate: 2022-10-01
+        endDate: "present"
+        highlights:
+          - 基于tokio，负责前后端通信rpc框架，开发Rust宏方便开发，支持前后端分离的架构以及IDE远程开发功能
+          - 负责IoC框架开发，能够在构建时注入不同module，采用Service-Provider模式，方便构建出前后端分离版本，和native版本
+          - 负责Rust和Arkts跨语言调用框架开发，提供了类似wasm-bindgen的宏，支持Rust调用Arkts的函数及对象
+          - 负责进程管理及通信框架的开发，使用async-stream的方式与子进程通信，基于rpc封装了远程子进程的通信，实现stream化控制流速等功能的buffer
+          - 基于Druid前端框架，参与Component框架的开发，提供数据处理逻辑与UI逻辑分离
+          - 使用Rust实现类似LangChain的框架，支持IDE对语言模型的调用
+          - 基于IoC，tokio，实现IDE的benchmark框架，用于测试文件系统，rpc，等服务的性能
+          - 适配鸿蒙系统，提供OH库的Rust binding，piet渲染框架对接OH，以及基于跨语言框架的OH文件系统对接
+          - 使用Druid框架实现一些前端基础组件，树，滚动，只读文本框渲染
+          - 实现IDE内的Terminal组件，前端负责维护term数据并做文本渲染，后端负责与shell进程通信，并使用mio(epoll)进行优化
+          - 实现IDE的task组件，实现类似vscode的task功能，实现log panel组件
+          - 使用piet实现lottie格式的动画渲染
+      
+  - organization: 商汤
+    url: null
+    location: 深圳
+    positions:
+      - position: AI开发工程师
+        startDate: 2020-02-01
+        endDate: 2020-09-01
+        highlights:
+          - 开发深度学习pipeline框架，实现数据处理-训练-蒸馏/量化-部署全流程自动化
+          - 阅读蒸馏相关论文并进行复现
+          - Nvidia Docker镜像打包
+
+education:
+  - institution: 伯明翰大学
+    url: null
+    area: 高级计算机科学
+    studyType: 硕士
+    startDate: 2021-09-01
+    endDate: 2022-09-01
+    location: 伯明翰，英国
+    courses:
+      - 计算机网络，编程语言原理，计算机视觉，安全&加密
+  - institution: 北京航空航天大学
+    url: null
+    area: 计算机科学与技术
+    studyType: 本科
+    startDate: 2017-09-01
+    endDate: 2021-07-01
+    location: 北京
+    courses:
+      - 计算机组成原理(verilog实现5级流水线CPU)，计算机系统(mips微内核os，rCore)，编译原理(C0文法编译器生成mips指令)，计算机网络，数据结构&算法，软件工程，图形学(GAMES101)
+
+
+projects:
+  - name: Rust实现riscv操作系统
+    url: null
+    #startDate: 2020-11-01
+    #endDate: 2021-04-30
+    highlights:
+      - 分页的物理内存管理，及虚拟内存机制
+      - 进程和线程管理，切换，通信
+      - virt-io的块设备驱动和文件系统
+      - 多线程并发的mutex锁
+  - name: C0文法编译器
+    url: null
+    #startDate: 2020-11-01
+    #endDate: 2021-04-30
+    highlights:
+      - 解析文法生成ast，及语法检查，生成四元组中间代码
+      - 实现基本错误处理
+      - 实现常数传播，四代码消除，函数内联等优化
+  - name: 以太坊测试节点
+    url: null
+    #startDate: 2020-11-01
+    #endDate: 2021-04-30
+    highlights:
+      - 解析solidity编译的字节流，解析出具体指令
+      - 实现以太坊栈式虚拟机，执行相应指令
+      - 使用虚拟机模拟了交易，并维护交易组成的block chain
+      - 实现了rpc的server和repl的cli工具
+
+
